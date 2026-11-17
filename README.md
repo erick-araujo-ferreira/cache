@@ -49,3 +49,14 @@ Regras da implementação:
 - em caso de atualização ou exclusão, a entrada do cache é removida para evitar dados inconsistentes
 
 Em resumo: o sistema tenta responder do cache primeiro; se o dado não estiver lá ou estiver expirado, vai ao banco, carrega e repõe o valor na memória.
+
+Demonstração:
+
+Primeira chamada:
+![img.png](img.png)
+
+Segunda chamada:
+![img_1.png](img_1.png)
+
+Estatísticas do cache:
+![img_2.png](img_2.png)
